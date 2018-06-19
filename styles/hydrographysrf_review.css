@@ -1,0 +1,13 @@
+/* @title Lake */
+[F_CODE = 'BH082'] [@sd < 200k] {
+	fill: #B0E1ED;
+  	z-index: 0;
+}
+
+/* @title Dam (No Transportation)*/
+[F_CODE = 'BI020'] [@sd < 500k] {
+	stroke: #333333;
+  	stroke-width: 20m;
+  	fill: #555555;
+  	z-index: 1;
+}

@@ -1,0 +1,4 @@
+/* @title Woods. */
+[F_CODE = 'EC015' and OSM_T_LAN = 'forest'] [@sd < 1M] {
+	fill: #C2E4B9;
+}

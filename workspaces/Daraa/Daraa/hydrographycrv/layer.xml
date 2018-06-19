@@ -1,0 +1,15 @@
+<layer>
+  <name>hydrographycrv</name>
+  <id>LayerInfoImpl--36009806:163cf54ecf5:-7fe0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--2d736656:163cf945440:-7ffa</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--36009806:163cf54ecf5:-7fe1</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

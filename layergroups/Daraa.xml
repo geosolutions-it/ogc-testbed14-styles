@@ -1,0 +1,71 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--2d736656:163cf945440:-7f91</id>
+  <name>Daraa</name>
+  <mode>SINGLE</mode>
+  <title>Daraa</title>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fe2</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fce</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fde</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fe0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fda</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd6</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--2d736656:163cf945440:-7fc0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fdc</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd2</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd4</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd8</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3dfd74be:1641813daa2:-7ffa</id>
+    </published>
+  </publishables>
+  <styles>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style/>
+    <style>
+      <id>StyleInfoImpl--39bfa24e:163d0084147:-7ff9</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>4010636.76995241</minx>
+    <maxx>4030771.18001951</maxx>
+    <miny>3831635.45001137</miny>
+    <maxy>3857559.07999519</maxy>
+    <crs class="projected">EPSG:3857</crs>
+  </bounds>
+</layerGroup>

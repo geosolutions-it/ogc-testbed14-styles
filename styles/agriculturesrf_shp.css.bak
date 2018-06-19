@@ -1,0 +1,7 @@
+/* @title: Cropland */
+[F_CODE = 'EA010' and OSM_T_LAN = 'farmland'] [@sd < 200k] {
+	fill: #F7EDED, url('file://symbols/Green_AP77_Fill.svg');
+  	fill-mime: 'image/svg';
+  	fill-size: 100m; /* 100 */
+  	/*graphic-margin: 10;*/ /* 100 */
+}

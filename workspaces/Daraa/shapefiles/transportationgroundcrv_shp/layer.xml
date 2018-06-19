@@ -1,0 +1,15 @@
+<layer>
+  <name>transportationgroundcrv_shp</name>
+  <id>LayerInfoImpl--361aa106:163f3d682f3:-7f81</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1daef7d3:163cf52bc25:-7fff</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--361aa106:163f3d682f3:-7f82</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

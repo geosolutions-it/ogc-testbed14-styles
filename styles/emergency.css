@@ -1,0 +1,11 @@
+[type = 'reunification'] [@sd < 35000] {
+  	mark: url('file://symbols/emergency/civilian-staging-transit.svg');
+    mark-mime: 'image/svg';
+    mark-size: 32;
+}
+
+[type = 'info_point'] [@sd < 35000] {
+	mark: url('file://symbols/emergency/public-information.svg');
+    mark-mime: 'image/svg';
+    mark-size: 32;
+}

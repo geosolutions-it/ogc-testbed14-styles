@@ -1,0 +1,14 @@
+{
+  "name": "import",
+  "version": "1.0.0",
+  "description": "ows import scripts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GeoSolutions",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.17.10",
+    "object-assign": "4.1.1"
+  }
+}

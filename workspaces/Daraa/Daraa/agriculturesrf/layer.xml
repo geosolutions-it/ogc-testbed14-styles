@@ -1,0 +1,15 @@
+<layer>
+  <name>agriculturesrf</name>
+  <id>LayerInfoImpl--36009806:163cf54ecf5:-7fe2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--2d736656:163cf945440:-7fee</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--36009806:163cf54ecf5:-7fe3</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

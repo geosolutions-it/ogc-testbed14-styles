@@ -1,0 +1,59 @@
+/* @title: Bridge */
+[F_CODE = 'AQ040' and TRS = '13'] {
+  	
+  	[@sd < 100k][@sd > 5000] {
+      	z-index: 0, 1;
+      	stroke-width: 10, 9;
+      	stroke: #333333, #ffffff;
+      	stroke-linecap: mitre, round;
+    };
+  	[@sd < 5000][@sd > 100] {
+      	z-index: 0, 1;
+      	stroke-width: 19, 18;
+      	stroke: #333333, #ffffff;
+      	stroke-linecap: mitre, round;
+    };
+}
+
+/*@title: Cart Track*/
+[F_CODE = 'AP010'] {
+    [@sd < 25M][@sd > 2.5M] {
+      	stroke-width: 1.14, 0.9, 0.9;
+      	stroke: #333333, #f7ab82, #ffffff;
+      	stroke-dasharray: 1 0, 1 0, 1.870 4.124 0.625 1.375;
+    };
+  	[@sd < 2.5M][@sd > 500k] {
+      	stroke-width: 1.5, 1.14, 1.14;
+      	stroke: #333333, #f7ab82, #ffffff;
+      	stroke-dasharray: 1 0, 1 0, 2.415 5.323 0.807 1.774;
+    };
+  	[@sd < 500k][@sd > 100k] {
+      	stroke-width: 3, 2.25, 2.25;
+      	stroke: #333333, #f7ab82, #ffffff;
+      	stroke-dasharray: 1 0, 4.797 10.577 1.603 3.526, 1 0;
+    };
+  	[@sd < 100k][@sd > 5000] {
+      	stroke-width: 6.3, 4.655, 4.655;
+      	stroke: #333333, #f7ab82, #ffffff;
+      	stroke-dasharray: 1 0, 1 0, 10 22 3.333 7.333;
+    };
+  	[@sd < 5000][@sd > 100] {
+      	stroke-width: 12, 8, 8;
+      	stroke: #333333, #f7ab82, #ffffff;
+      	stroke-dasharray: 1 0, 1 0, 18.100 39.820 6.033 13.273;
+    };
+}
+
+/* @title: Trail */
+[F_CODE = 'AP050'] {
+  	[@sd < 100k][@sd > 5000] {
+      	stroke-width: 2.363, 2.363;
+      	stroke: #333333, #ffffff;
+      	stroke-dasharray: 1 0, 5 9 1.5 2.5;
+    };
+  	[@sd < 5000][@sd > 100] {
+      	stroke-width: 4.5, 4.5;
+      	stroke: #333333, #ffffff;
+      	stroke-dasharray: 1 0, 10 18 3 5;
+    };
+}

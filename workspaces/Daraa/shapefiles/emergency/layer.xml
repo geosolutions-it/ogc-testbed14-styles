@@ -1,0 +1,15 @@
+<layer>
+  <name>emergency</name>
+  <id>LayerInfoImpl--3dfd74be:1641813daa2:-7ffa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--39bfa24e:163d0084147:-7ff9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3dfd74be:1641813daa2:-7ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

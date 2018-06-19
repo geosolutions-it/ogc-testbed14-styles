@@ -1,0 +1,69 @@
+* {
+	label: [OSM_T_ENG];
+  	font-family: "Open Sans";
+    font-size: 9;
+    font-fill: #000000;
+    halo-color: #ffffff;
+    halo-radius: 2;
+  	-gt-label-follow-line: true;
+  	-gt-label-repeat: 100;
+}
+
+/* @title: Road Primary */
+[F_CODE = 'AP030' and RIN_ROI = '3'][@sd < 2.5M] {
+  stroke: #e892a2;
+  stroke-width: categorize(@sd, 2, 400k, 1.9, 800k, 1.4, 1.5M, 1, 3M, 0.8, 6M, 0.5);
+  stroke-linecap: butt, round;
+  [@sd < 200k] {
+    z-index: 0, 1;
+    stroke: #c24e6b, #e892a2;
+    stroke-width:  
+      categorize(@sd, 27, 1.5k, 21, 3k, 18, 6k, 10, 25k, 6, 200k, 3.5),
+      [categorize(@sd, 27 - 2, 1.5k, 21 - 2, 3k, 18 - 2, 6k, 10 - 1.4, 25k, 6 - 1, 200k, 3.5 - 1) * 0.9];
+    [@sd < 100k] {
+      stroke: #dc2a67, #e892a2;
+    };
+  }
+}
+
+/* @title: Road Secondary */
+[F_CODE = 'AP030' and RIN_ROI = '4'][@sd < 2.5M] {
+  stroke: #e892a2;
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  stroke-linecap: butt, round;
+  [@sd < 200k] {
+    z-index: 0, 1;
+    stroke-opacity: 0.4, 1;
+    stroke: #9eae23, #e892a2;
+    [@sd < 100k] {
+      stroke-opacity: 1, 1;
+      stroke: #707d05, #e892a2;
+    };
+    stroke-width: 
+      categorize(@sd, 27, 1.5k, 21, 3k, 18, 6k, 10, 12.5k, 9, 25k, 5, 100k, 3.5),
+      [categorize(@sd, 27 - 2, 1.5k, 21 - 2, 3k, 18 - 2, 6k, 10 - 1.5, 12.5k, 9 - 1.5, 25k, 5 - 1, 100k, 3.5 - 0.8)];
+  };
+
+}
+
+/* @title: Street */
+[F_CODE = 'AP030' and RIN_ROI = '5'][@sd < 200k] {
+  stroke: #633f2f, #edddd6;
+  stroke-linejoin: butt, round;
+  stroke-width: 1.0, 0.8;
+  [@sd < 100k][@sd > 50k] {
+    stroke-linecap: butt, round;
+    z-index: 0, 1;
+    stroke: #633f2f, #edddd6;
+    stroke-width: 2, 1.2;
+  };
+  [@sd < 50k] {
+    stroke-linecap: butt, round;
+    z-index: 0, 1;
+    stroke: #633f2f, #edddd6;
+    stroke-width: 
+      categorize(@sd, 27, 1.5k, 21, 3k, 18, 6k, 10, 12.5k, 9, 25k, 4, 100k, 2.5),
+      [categorize(@sd, 27 - 2, 1.5k, 21 - 2, 3k, 18 - 2, 6k, 10 - 1.5, 12.5k, 9 - 1.5, 25k, 4 - 1, 100k, 2.5 - 0.8)];
+  };
+}

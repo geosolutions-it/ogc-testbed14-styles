@@ -1,0 +1,12 @@
+{
+    "codes": {
+        "landuse": "OSM_T_LAN",
+        "waterway": "OSM_T_WAT",
+        "place": "OSM_T_PLA",
+        "is_in": "OSM_T_IIN",
+        "amenity": "OSM_T_AME",
+        "religion": "OSM_T_REL",
+        "power": "OSM_T_POW",
+        "name:en": "OSM_T_ENG"
+    }
+}

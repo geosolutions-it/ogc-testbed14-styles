@@ -1,0 +1,4 @@
+/* @title: Built Up Area */
+[F_CODE = 'AL020'] [@sd < 200k] {
+	fill: #E8C3B2;
+}

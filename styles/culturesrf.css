@@ -1,0 +1,6 @@
+/* @title Cemetery, Unknown */
+[F_CODE = 'AL030' and OSM_T_LAN = 'cemetery'] [@sd < 200k] {
+	stroke: #000000;
+  	stroke-width: 5m;
+  	stroke-dasharray: 5 2.5;
+}

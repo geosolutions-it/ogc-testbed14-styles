@@ -1,0 +1,12 @@
+/* @title River, Permanent */
+[F_CODE = 'BH140' and OSM_T_WAT <> 'drain'] [@sd < 200k] {
+	stroke: #00A0C6, #B0E1ED;
+  	stroke-width: 10m, 8m;
+}
+
+/* @title River, Intermittent */
+[F_CODE = 'BH140' and OSM_T_WAT = 'drain'] [@sd < 200k] {
+	stroke: #00A0C6;
+  	stroke-width: 10m;
+  	stroke-dasharray: 10 2.5;
+}

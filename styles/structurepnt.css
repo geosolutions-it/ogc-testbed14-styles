@@ -1,0 +1,48 @@
+/* @title: Building, General */
+[F_CODE = 'AL013' and OSM_T_AME <> 'public_building' and OSM_T_AME <> 'college' and OSM_T_AME <> 'place_of_worship'] {
+    [@sd < 100k] {
+      mark: url('file://symbols/building.svg');
+      mark-mime: 'image/svg';
+      mark-size: 40m;
+    };
+    [@sd > 100k] [@sd < 200k]  {
+      mark: url('file://symbols/building.svg');
+      mark-mime: 'image/svg';
+      mark-size: 3m;
+    };
+}
+
+/* @title: Building, Mosque */
+[F_CODE = 'AL013' and OSM_T_REL = 'muslim' and OSM_T_AME = 'place_of_worship'] {
+  [@sd < 100k] {
+    mark: url('file://symbols/AR_Black_Mosque.svg');
+    mark-mime: 'image/svg';
+    mark-size: 130m;
+  };
+  [@sd > 100k] [@sd < 200k]  {
+    mark: url('file://symbols/PT_Black_Mosque.svg');
+    mark-mime: 'image/svg';
+    mark-size: 15m;
+  };
+}
+
+/* @title: Building, School */
+[F_CODE = 'AL013' and OSM_T_AME = 'college'] {
+  [@sd < 100k] {
+    mark: url('file://symbols/PT_Black_School.svg');
+    mark-mime: 'image/svg';
+    mark-size: 130m;
+  };
+  [@sd > 100k] [@sd < 200k]  {
+    mark: url('file://symbols/PT_Black_School.svg');
+    mark-mime: 'image/svg';
+    mark-size: 15m;
+  };
+}
+
+/* @title: Building, Public */
+[F_CODE = 'AL013' and OSM_T_AME = 'public_building'] [@sd < 200k] {
+  mark: url('file://symbols/building.svg');
+  mark-mime: 'image/svg';
+  mark-size: 70m;
+}
