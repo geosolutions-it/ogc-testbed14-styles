@@ -75,10 +75,28 @@ Columns cases are important to assign styles in css and sld files.
 
 ```
 node ./import.js dbname host port user password ogr2ogr
-```
+``` 
 - dbname: name of database with postgis extension, default 'ows'
 - host: host of postegres, default 'localhost'
 - host: port of postegres, default '5432
 - user: username, default 'postgres'
 - password: password, default 'postgres'
 - ogr2ogr: bin path or 'ogr2ogr', default 'C:/OSGeo4W64/bin/ogr2ogr'
+
+# import raster data
+
+Configure properly the file ./raster/datastore.properties with database name, schema, username, password, port and host.
+Add following files to ./raster folter
+
+- ls8_20170309.TIF
+- ls8_20170325.TIF
+- ls8_20170410.TIF
+- ls8_20170426.TIF
+- ls8_20170512.TIF
+- ls8_20170528.TIF
+- ls8_20170613.TIF
+- ls8_20170629.TIF
+
+create a new ImageMosaic store selecting the raster folder.
+Apply landsat8_sld style to the published raster layer.
+Now the raster layer is ready.
