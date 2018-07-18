@@ -46,6 +46,9 @@
     <published type="layer">
       <id>LayerInfoImpl--3dfd74be:1641813daa2:-7ffa</id>
     </published>
+    <published type="layer">
+      <id>LayerInfoImpl--66cb81fd:16489a46965:-7ffb</id>
+    </published>
   </publishables>
   <styles>
     <style>
@@ -90,6 +93,7 @@
     <style>
       <id>StyleInfoImpl--39bfa24e:163d0084147:-7ff9</id>
     </style>
+    <style/>
   </styles>
   <bounds>
     <minx>4010636.76995241</minx>

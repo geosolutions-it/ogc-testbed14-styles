@@ -1,0 +1,15 @@
+<layer>
+  <name>rasters</name>
+  <id>LayerInfoImpl--44964cb3:164656f91e2:-7ffa</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7554c9a:16464ac413f:-7ff2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--44964cb3:164656f91e2:-7ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

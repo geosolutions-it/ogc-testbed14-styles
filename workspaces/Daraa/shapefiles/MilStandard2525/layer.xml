@@ -1,0 +1,15 @@
+<layer>
+  <name>MilStandard2525</name>
+  <id>LayerInfoImpl--66cb81fd:16489a46965:-7ffb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-181221a6:16489929d73:-7ff9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--66cb81fd:16489a46965:-7ffc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
