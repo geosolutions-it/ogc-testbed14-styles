@@ -4,12 +4,12 @@
   	[@sd < 100k][@sd > 5000] {
       	stroke-width: 12, 10;
       	stroke: #000000, #ffffff;
-      	stroke-linecap: mitre, round;
+      	stroke-linecap: square, round;
     };
   	[@sd < 5000][@sd > 100] {
       	stroke-width: 20, 14;
       	stroke: #000000, #ffffff;
-      	stroke-linecap: mitre, round;
+      	stroke-linecap: square, round;
     };
 }
 
@@ -28,7 +28,7 @@
   	[@sd < 500k][@sd > 100k] {
       	stroke-width: 3, 2.25, 2.25;
       	stroke: #000000, #f7ab82, #ffffff;
-      	stroke-dasharray: 1 0, 4.797 10.577 1.603 3.526, 1 0;
+      	stroke-dasharray: 1 0, 1 0, 4.797 10.577 1.603 3.526;
     };
   	[@sd < 100k][@sd > 5000] {
       	stroke-width: 6.3, 4.655, 4.655;

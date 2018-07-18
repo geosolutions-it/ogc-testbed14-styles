@@ -21,7 +21,7 @@
           <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke-linecap">mitre</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
               <sld:CssParameter name="stroke-width">12</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
@@ -43,7 +43,7 @@
           <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke-linecap">mitre</sld:CssParameter>
+              <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
               <sld:CssParameter name="stroke-width">20</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
@@ -130,14 +130,14 @@
             <sld:Stroke>
               <sld:CssParameter name="stroke">#f7ab82</sld:CssParameter>
               <sld:CssParameter name="stroke-width">2.25</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">4.796999931335449 10.57699966430664 1.6030000448226929 3.5260000228881836</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">1.0 0.0</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
               <sld:CssParameter name="stroke-width">2.25</sld:CssParameter>
-              <sld:CssParameter name="stroke-dasharray">1.0 0.0</sld:CssParameter>
+              <sld:CssParameter name="stroke-dasharray">4.796999931335449 10.57699966430664 1.6030000448226929 3.5260000228881836</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>

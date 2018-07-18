@@ -1,5 +1,5 @@
 /* @title: Building, General */
-[F_CODE = 'AL013' and OSM_T_AME <> 'public_building' and OSM_T_AME <> 'college' and OSM_T_AME <> 'place_of_worship'] {
+[F_CODE = 'AL013'] {
     [@sd < 100k] {
       mark: url('file://symbols/building.svg');
       mark-mime: 'image/svg';

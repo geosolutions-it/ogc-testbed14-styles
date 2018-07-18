@@ -5,7 +5,7 @@
       <sld:Name>Default Styler</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
-          <sld:Title>Building, Mosque</sld:Title>
+          <sld:Title>Building, General, Building, Mosque</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -34,7 +34,7 @@
           </sld:PointSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Building, Mosque</sld:Title>
+          <sld:Title>Building, General, Building, Mosque</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -64,74 +64,7 @@
           </sld:PointSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Building, General</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AL013</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
-                <ogc:Literal>college</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
-                <ogc:Literal>place_of_worship</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
-                <ogc:Literal>public_building</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:PointSymbolizer>
-            <sld:Graphic>
-              <sld:ExternalGraphic>
-                <sld:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="file://symbols/building.svg"/>
-                <sld:Format>image/svg</sld:Format>
-              </sld:ExternalGraphic>
-              <sld:Size>40m</sld:Size>
-            </sld:Graphic>
-          </sld:PointSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Title>Building, General</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AL013</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
-                <ogc:Literal>college</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
-                <ogc:Literal>place_of_worship</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
-                <ogc:Literal>public_building</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
-          <sld:PointSymbolizer>
-            <sld:Graphic>
-              <sld:ExternalGraphic>
-                <sld:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="file://symbols/building.svg"/>
-                <sld:Format>image/svg</sld:Format>
-              </sld:ExternalGraphic>
-              <sld:Size>3m</sld:Size>
-            </sld:Graphic>
-          </sld:PointSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Title>Building, School</sld:Title>
+          <sld:Title>Building, General, Building, School</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
@@ -170,7 +103,46 @@
           </sld:PointSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Building, School</sld:Title>
+          <sld:Title>Building, General, Building, Public</sld:Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                  <ogc:Literal>AL013</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
+                  <ogc:Literal>place_of_worship</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>OSM_T_REL</ogc:PropertyName>
+                  <ogc:Literal>muslim</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AL013</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
+                <ogc:Literal>public_building</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:ExternalGraphic>
+                <sld:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="file://symbols/building.svg"/>
+                <sld:Format>image/svg</sld:Format>
+              </sld:ExternalGraphic>
+              <sld:Size>70m</sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>Building, General, Building, School</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
@@ -210,7 +182,7 @@
           </sld:PointSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Building, Public</sld:Title>
+          <sld:Title>Building, General, Building, Public</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
@@ -250,7 +222,7 @@
           </sld:PointSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Building, Public</sld:Title>
+          <sld:Title>Building, General</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
@@ -271,10 +243,14 @@
                 <ogc:PropertyName>F_CODE</ogc:PropertyName>
                 <ogc:Literal>AL013</ogc:Literal>
               </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
+                <ogc:Literal>college</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
                 <ogc:Literal>public_building</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              </ogc:PropertyIsNotEqualTo>
             </ogc:And>
           </ogc:Filter>
           <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
@@ -284,7 +260,51 @@
                 <sld:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="file://symbols/building.svg"/>
                 <sld:Format>image/svg</sld:Format>
               </sld:ExternalGraphic>
-              <sld:Size>70m</sld:Size>
+              <sld:Size>40m</sld:Size>
+            </sld:Graphic>
+          </sld:PointSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:Title>Building, General</sld:Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:Or>
+                <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                  <ogc:Literal>AL013</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
+                  <ogc:Literal>place_of_worship</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>OSM_T_REL</ogc:PropertyName>
+                  <ogc:Literal>muslim</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AL013</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
+                <ogc:Literal>college</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>OSM_T_AME</ogc:PropertyName>
+                <ogc:Literal>public_building</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>200000.0</sld:MaxScaleDenominator>
+          <sld:PointSymbolizer>
+            <sld:Graphic>
+              <sld:ExternalGraphic>
+                <sld:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="file://symbols/building.svg"/>
+                <sld:Format>image/svg</sld:Format>
+              </sld:ExternalGraphic>
+              <sld:Size>3m</sld:Size>
             </sld:Graphic>
           </sld:PointSymbolizer>
         </sld:Rule>
