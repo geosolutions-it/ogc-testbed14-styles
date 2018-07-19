@@ -1,0 +1,8 @@
+/* @title Landsat 8 */
+* {
+    raster-channels: 1 2 3;
+  	raster-contrast-enhancement: normalize normalize normalize;
+  	raster-contrast-enhancement-algorithm: StretchToMinimumMaximum;
+  	raster-contrast-enhancement-min: 5000;
+  	raster-contrast-enhancement-max: 20000;
+}
