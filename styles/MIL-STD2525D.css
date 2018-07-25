@@ -1,40 +1,52 @@
 [@sd < 35k] {
-	[code = 1] {
-        mark: url('file://symbols/2525/Frames/0310_Friend.svg'), url('file://symbols/2525/Symbol/10190000_Emergency_Operation.svg');
-        mark-mime: 'image/svg';
-        mark-size: 64;
-    };
-    [code = 2] {
-        mark: url('file://symbols/2525/Symbol/25280201_Antipersonnel Mine with Directional Effects.svg');
-        mark-mime: 'image/svg';
-        mark-size: 40;
-        mark-rotation: [Angle - 90];
-    };
-    [code = 3] {
-        mark: url('file://symbols/2525/Symbol/25280201_Antipersonnel Mine with Directional Effects.svg');
-        mark-mime: 'image/svg';
-        mark-size: 40;
-        mark-rotation: [Angle - 90];
-    };
-    [code = 4] {
-        mark: url('file://symbols/2525/Symbol/25280201_Antipersonnel Mine with Directional Effects.svg');
-        mark-mime: 'image/svg';
-        mark-size: 40;
-        mark-rotation: [Angle - 90];
-    };
-    [code = 6] {
-        mark: url('file://symbols/2525/Frames/0510_Suspect_Joker.svg'), url('file://symbols/2525/Symbol/11110400_Organization or Group.svg');
-        mark-mime: 'image/svg';
-        mark-size: 64;
-    };
-    [code = 7] {
-        mark: url('file://symbols/2525/Frames/0410_Neutral.svg'), url('file://symbols/2525/Symbol/10190000_Emergency_Operation.svg');
-        mark-mime: 'image/svg';
-        mark-size: 64;
-    };
-    [code = 8] {
-        mark: url('file://symbols/2525/Frames/0600_Hostile_Faker.svg'), url('file://symbols/2525/Symbol/11110400_Organization or Group.svg');
-        mark-mime: 'image/svg';
-        mark-size: 64;
-    };
+	[StndID_1 = 0] {
+        [StndID_2 in (2, 3, 4, 5)] {
+            mark-mime: 'image/svg';
+            mark-size: 64;
+            z-index: 0;
+            [StndID_2 = 2] {
+                mark: url('file://symbols/2525/Frames/0310_Friend.svg');
+            };
+            [StndID_2 = 3] {
+                mark: url('file://symbols/2525/Frames/0410_Neutral.svg');
+            };
+            [StndID_2 = 4] {
+                mark: url('file://symbols/2525/Frames/0510_Suspect_Joker.svg');
+            };
+            [StndID_2 = 5] {
+                mark: url('file://symbols/2525/Frames/0600_Hostile_Faker.svg');
+            };
+        };
+	};
+  	[Entity = 28] {
+      	z-index: 1;
+      	[EntityT = 2] {
+          	[EntityST = 1] {
+      			mark: url('file://symbols/2525/Symbol/25280201_Antipersonnel Mine with Directional Effects.svg');
+          		mark-mime: 'image/svg';
+            	mark-size: 40;
+            	mark-rotation: [Angle - 90];
+            };
+      	};
+  	};
+  	[Entity = 11] {
+      	z-index: 1;
+      	[EntityT = 4] {
+          	[EntityST = 0] {
+      			mark: url('file://symbols/2525/Symbol/11110400_Organization or Group.svg');
+          		mark-mime: 'image/svg';
+            	mark-size: 64;
+            };
+      	};
+  	};
+  	[Entity = 19] {
+      	z-index: 1;
+      	[EntityT = 0] {
+          	[EntityST = 0] {
+      			mark: url('file://symbols/2525/Symbol/10190000_Emergency_Operation.svg');
+          		mark-mime: 'image/svg';
+            	mark-size: 64;
+            };
+      	};
+  	};
 }

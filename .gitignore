@@ -2,3 +2,4 @@ scriptstestbed/node_modules/
 rasters/*.TIF
 rasters/rasters.properties
 rasters/sample_image.dat
+logs/

@@ -100,8 +100,3 @@ Add following files to ./raster folter
 create a new ImageMosaic store selecting the raster folder.
 Apply landsat8_sld style to the published raster layer.
 Now the raster layer is ready.
-
-# MilStandard2525 shapefile update
-
-Added a code column to separete it from Id column required for apply styles.
-Code column has same value of Id.
