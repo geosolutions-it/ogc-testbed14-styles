@@ -1,0 +1,71 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--775aa164:1651991be48:-7ff7</id>
+  <name>Daraa_Raster</name>
+  <mode>SINGLE</mode>
+  <title>Daraa_Raster</title>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl--44964cb3:164656f91e2:-7ffa</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--2d736656:163cf945440:-7fc0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--2d736656:163cf945440:-7fc0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd2</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd4</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd0</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--36009806:163cf54ecf5:-7fd8</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--3dfd74be:1641813daa2:-7ffa</id>
+    </published>
+    <published type="layer">
+      <id>LayerInfoImpl--66cb81fd:16489a46965:-7ffb</id>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <id>StyleInfoImpl-6033b935:164b1adf251:-7ffb</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--361aa106:163f3d682f3:-7efa</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--2d736656:163cf945440:-7fc2</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--2d736656:163cf945440:-7fb9</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--2d736656:163cf945440:-7fcd</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--2d736656:163cf945440:-7fb2</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--2d736656:163cf945440:-7fdc</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--39bfa24e:163d0084147:-7ff9</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-181221a6:16489929d73:-7ff9</id>
+    </style>
+  </styles>
+  <bounds>
+    <minx>4010636.76995241</minx>
+    <maxx>4030771.18001951</maxx>
+    <miny>3831635.45001137</miny>
+    <maxy>3857559.07999519</maxy>
+    <crs class="projected">EPSG:3857</crs>
+  </bounds>
+</layerGroup>
