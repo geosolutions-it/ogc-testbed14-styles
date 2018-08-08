@@ -41,15 +41,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -62,15 +59,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -113,15 +107,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -134,15 +125,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -185,15 +173,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -206,15 +191,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -257,15 +239,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -278,15 +257,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -359,15 +335,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -380,15 +353,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -431,15 +401,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -452,15 +419,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -503,15 +467,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -524,15 +485,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -575,15 +533,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -596,15 +551,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1032,15 +984,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1053,15 +1002,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1104,15 +1050,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1125,15 +1068,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1176,15 +1116,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1197,15 +1134,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1248,15 +1182,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1269,15 +1200,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1356,15 +1284,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1377,15 +1302,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1428,15 +1350,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1449,15 +1368,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1500,15 +1416,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1521,15 +1434,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1572,15 +1482,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1593,15 +1500,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1790,15 +1694,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1811,15 +1712,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1862,15 +1760,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1883,15 +1778,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1934,15 +1826,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -1955,15 +1844,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2006,15 +1892,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2027,15 +1910,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2115,15 +1995,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2136,15 +2013,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2187,15 +2061,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2208,15 +2079,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2259,15 +2127,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2280,15 +2145,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2331,15 +2193,12 @@
                   <ogc:PropertyName>the_geom</ogc:PropertyName>
                 </ogc:Function>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="sin">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
@@ -2352,15 +2211,12 @@
                   </ogc:Function>
                 </ogc:Mul>
                 <ogc:Mul>
-                  <ogc:Mul>
-                    <ogc:Div>
-                      <ogc:Function name="env">
-                        <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                      </ogc:Function>
-                      <ogc:Literal>4500</ogc:Literal>
-                    </ogc:Div>
-                    <ogc:Literal>-10</ogc:Literal>
-                  </ogc:Mul>
+                  <ogc:Div>
+                    <ogc:Function name="env">
+                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                    </ogc:Function>
+                    <ogc:Literal>-450</ogc:Literal>
+                  </ogc:Div>
                   <ogc:Function name="cos">
                     <ogc:Function name="toRadians">
                       <ogc:Mul>
