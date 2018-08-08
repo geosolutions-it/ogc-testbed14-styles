@@ -1,4 +1,4 @@
-[@sd < 35k] {
+[@sd < 250k] {
 	[StndID_1 = 0] {
         [StndID_2 in (2, 3, 4, 5)] {
             mark-mime: 'image/svg';

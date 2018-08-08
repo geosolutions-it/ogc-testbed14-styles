@@ -5,7 +5,216 @@
       <sld:Name>Default Styler</sld:Name>
       <sld:FeatureTypeStyle>
         <sld:Rule>
-          <sld:Title>Street</sld:Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>2500000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>2.5E7</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">1.14</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>2500000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">6.3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">12</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>2500000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>2.5E7</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">1.14</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>2500000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">6.3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke-width">12</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -25,15 +234,8 @@
               <sld:CssParameter name="stroke-width">0.855</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.675</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Street</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -53,15 +255,8 @@
               <sld:CssParameter name="stroke-width">1.125</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.855</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Street</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -78,18 +273,11 @@
           <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke-width">2.250</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.688</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.9</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Street</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -106,18 +294,11 @@
           <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
           <sld:LineSymbolizer>
             <sld:Stroke>
-              <sld:CssParameter name="stroke-width">4.725</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">3.491</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3.725</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>
         <sld:Rule>
-          <sld:Title>Street</sld:Title>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -135,222 +316,6 @@
           <sld:LineSymbolizer>
             <sld:Stroke>
               <sld:CssParameter name="stroke-width">9</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">6</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>2500000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>2.5E7</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">1.14</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>2500000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">6.3</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">12</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>4</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>2500000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>2.5E7</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">1.14</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>4</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>2500000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>4</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>4</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">6.3</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AP030</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
-                <ogc:Literal>4</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">12</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>
@@ -574,6 +539,116 @@
             <sld:Stroke>
               <sld:CssParameter name="stroke">#cb171a</sld:CssParameter>
               <sld:CssParameter name="stroke-width">8</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>2500000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>2.5E7</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.675</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>2500000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">0.855</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1.2</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>100000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">2.491</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>F_CODE</ogc:PropertyName>
+                <ogc:Literal>AP030</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>RIN_ROI</ogc:PropertyName>
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+          <sld:MinScaleDenominator>100.0</sld:MinScaleDenominator>
+          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">6</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>

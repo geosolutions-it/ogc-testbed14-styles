@@ -1,18 +1,69 @@
 /* @title: Bridge */
+
 [F_CODE = 'AQ040' and TRS = '13'] {
-  	
-  	[@sd < 100k][@sd > 5000] {
-      	z-index: 0, 1;
-      	stroke-width: 10, 9;
-      	stroke: #333333, #ffffff;
-      	stroke-linecap: square, round;
+  
+  	[@sd < 10k][startAngle(the_geom) IS NOT NULL AND endAngle(the_geom) IS NOT NULL] {
+      	[@sd >= 5k] {
+			mark-geometry: [offset(startPoint(the_geom),
+					@sd / 4500 * 10 * sin(toRadians(startAngle(the_geom) * 1)),
+					@sd / 4500 * 10 * cos(toRadians(startAngle(the_geom) * 1)))],
+				[offset(endPoint(the_geom),
+					@sd / 4500 * 10 * sin(toRadians(endAngle(the_geom) * 1)), 
+					@sd / 4500 * 10 * cos(toRadians(endAngle(the_geom) * 1)))],
+				[offset(startPoint(the_geom),
+					@sd / 4500 * -10 * sin(toRadians(startAngle(the_geom) * 1)), 
+					@sd / 4500 * -10 * cos(toRadians(startAngle(the_geom) * 1)))],
+				[offset(endPoint(the_geom),
+					@sd / 4500 * -10 * sin(toRadians(endAngle(the_geom) * 1)), 
+					@sd / 4500 * -10 * cos(toRadians(endAngle(the_geom) * 1)))];
+        };
+		[@sd < 5k] {
+			mark-geometry: [offset(startPoint(the_geom),
+					@sd / 4500 * 18 * sin(toRadians(startAngle(the_geom) * 1)),
+					@sd / 4500 * 18 * cos(toRadians(startAngle(the_geom) * 1)))],
+				[offset(endPoint(the_geom),
+					@sd / 4500 * 18 * sin(toRadians(endAngle(the_geom) * 1)), 
+					@sd / 4500 * 18 * cos(toRadians(endAngle(the_geom) * 1)))],
+				[offset(startPoint(the_geom),
+					@sd / 4500 * -18 * sin(toRadians(startAngle(the_geom) * 1)), 
+					@sd / 4500 * -18 * cos(toRadians(startAngle(the_geom) * 1)))],
+				[offset(endPoint(the_geom),
+					@sd / 4500 * -18 * sin(toRadians(endAngle(the_geom) * 1)), 
+					@sd / 4500 * -18 * cos(toRadians(endAngle(the_geom) * 1)))];
+		};
+      	
+        mark: symbol('shape://vertline');
+        mark-rotation: [startAngle(the_geom) - 45], [endAngle(the_geom) + 45], [startAngle(the_geom) + 45], [endAngle(the_geom) - 45];
+      	mark-anchor: 0 0, 0 0, 0 1, 0 1;
+    
+      	:mark {
+            stroke: #000000;
+            stroke-width: 2;
+            size: 15;
+        };
+      	[@sd >= 5000] {
+      		:mark {
+                stroke-width: 0.5;
+                size: 5;
+        	};
+      	};
+  	};
+  	[@sd < 100k][@sd >= 30k] {
+      	z-index: 1, 2;
+      	stroke-width: 10, 8;
+      	stroke: #000000, #ffffff;
+    };
+  	[@sd < 30k][@sd >= 5000] {
+      	z-index: 1, 2;
+      	stroke-width: 14, 12;
+      	stroke: #000000, #ffffff;
     };
   	[@sd < 5000][@sd > 100] {
-      	z-index: 0, 1;
-      	stroke-width: 19, 18;
-      	stroke: #333333, #ffffff;
-      	stroke-linecap: square, round;
+      	z-index: 1, 2;
+      	stroke-width: 32, 26;
+      	stroke: #000000, #ffffff;
     };
+  	
 }
 
 /*@title: Cart Track*/

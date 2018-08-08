@@ -26,10 +26,10 @@
       <id>LayerInfoImpl--361aa106:163f3d682f3:-7f81</id>
     </published>
     <published type="layer">
-      <id>LayerInfoImpl--361aa106:163f3d682f3:-7f91</id>
+      <id>LayerInfoImpl--361aa106:163f3d682f3:-7f81</id>
     </published>
     <published type="layer">
-      <id>LayerInfoImpl--361aa106:163f3d682f3:-7f81</id>
+      <id>LayerInfoImpl--361aa106:163f3d682f3:-7f91</id>
     </published>
     <published type="layer">
       <id>LayerInfoImpl--361aa106:163f3d682f3:-7f8f</id>
@@ -67,13 +67,13 @@
       <id>StyleInfoImpl--2d736656:163cf945440:-7fd5</id>
     </style>
     <style>
+      <id>StyleInfoImpl--361aa106:163f3d682f3:-7efa</id>
+    </style>
+    <style>
       <id>StyleInfoImpl--2d736656:163cf945440:-7fc2</id>
     </style>
     <style>
       <id>StyleInfoImpl--2d736656:163cf945440:-7fe5</id>
-    </style>
-    <style>
-      <id>StyleInfoImpl--361aa106:163f3d682f3:-7efa</id>
     </style>
     <style>
       <id>StyleInfoImpl--2d736656:163cf945440:-7fb9</id>

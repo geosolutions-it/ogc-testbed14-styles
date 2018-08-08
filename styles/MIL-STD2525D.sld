@@ -17,7 +17,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -41,7 +41,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -65,7 +65,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -89,7 +89,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -124,7 +124,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -162,7 +162,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -194,7 +194,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -226,7 +226,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -264,7 +264,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>
@@ -296,7 +296,7 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <sld:MaxScaleDenominator>35000.0</sld:MaxScaleDenominator>
+          <sld:MaxScaleDenominator>250000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Graphic>
               <sld:ExternalGraphic>

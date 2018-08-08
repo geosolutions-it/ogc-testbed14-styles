@@ -62,6 +62,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -124,6 +125,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -210,6 +212,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -274,6 +277,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -340,6 +344,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -394,6 +399,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -440,6 +446,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -504,6 +511,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -556,6 +564,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -581,6 +590,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -631,6 +641,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -691,6 +702,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -751,6 +763,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -810,6 +823,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -896,6 +910,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -980,6 +995,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -1066,6 +1082,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -1153,6 +1170,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -1200,6 +1218,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>
@@ -1286,6 +1305,7 @@
               <sld:CssParameter name="fill">#000000</sld:CssParameter>
             </sld:Fill>
             <sld:VendorOption name="followLine">true</sld:VendorOption>
+            <sld:VendorOption name="group">true</sld:VendorOption>
             <sld:VendorOption name="repeat">100</sld:VendorOption>
           </sld:TextSymbolizer>
         </sld:Rule>

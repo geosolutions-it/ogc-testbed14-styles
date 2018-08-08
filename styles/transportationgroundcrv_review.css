@@ -6,6 +6,7 @@
     halo-color: #ffffff;
     halo-radius: 2;
   	-gt-label-follow-line: true;
+  	label-group: true;
   	-gt-label-repeat: 100;
 }
 
