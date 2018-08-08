@@ -1,16 +1,16 @@
 /* @title Sports Ground */
 [F_CODE = 'AK040'] [@sd < 80k] {
- 	fill-geometry: [the_geom], [boundary(the_geom)];
-  	fill: #E8F3E2, none;
-  	stroke: none, #3EA250;
-  	stroke-opacity: 0, 1;
-  	stroke-width: 5m;
- 	stroke-dasharray: 5 2.5;
- 	stroke-offset: 2;
+  fill-geometry: [the_geom], [boundary(the_geom)];
+  fill: #E8F3E2, none;
+  stroke: none, #3EA250;
+  stroke-opacity: 0, 1;
+  stroke-width: 5m;
+  stroke-dasharray: 5 2.5;
+  stroke-offset: 2;
 }
 
 [F_CODE = 'AK040'] [@sd > 80k] [@sd < 200k] {
- 	fill: url('file://symbols/sports_ground_wilson.svg');
-    fill-mime: 'image/svg';
-    fill-size: 6m;
+  fill: url('file://symbols/sports_ground_wilson.svg');
+  fill-mime: 'image/svg';
+  fill-size: 6m;
 }

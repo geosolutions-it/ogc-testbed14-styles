@@ -1,13 +1,13 @@
 * {
-	label: [OSM_T_ENG];
-  	font-family: "Open Sans";
-    font-size: 9;
-    font-fill: #000000;
-    halo-color: #ffffff;
-    halo-radius: 2;
-  	-gt-label-follow-line: true;
-  	label-group: true;
-  	-gt-label-repeat: 100;
+  label: [OSM_T_ENG];
+  font-family: "Open Sans";
+  font-size: 9;
+  font-fill: #000000;
+  halo-color: #ffffff;
+  halo-radius: 2;
+  -gt-label-follow-line: true;
+  label-group: true;
+  -gt-label-repeat: 100;
 }
 
 /* @title: Road Primary */

@@ -1,10 +1,10 @@
 /* Geographic Name */
 [OSM_T_IIN LIKE '%Syria%' or OSM_T_PLA = 'locality'] [@sd < 500k] {
-    label: [OSM_T_ENG];
-    font-family: "Open Sans";
-    font-size: 10;
-    font-fill: #000000;
-    halo-color: #ffffff;
-    halo-radius: 1;
-  	label-anchor: 0.5 0.5;
+  label: [OSM_T_ENG];
+  font-family: "Open Sans";
+  font-size: 10;
+  font-fill: #000000;
+  halo-color: #ffffff;
+  halo-radius: 1;
+  label-anchor: 0.5 0.5;
 }

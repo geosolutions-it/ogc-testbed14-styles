@@ -1,32 +1,32 @@
 /* @title Pylon */
 [F_CODE = 'AT042' and OSM_T_POW = 'tower'] [@sd < 200k] {
-	mark: url('file://symbols/modified/pylon_wilson.svg');
-  	mark-mime: 'image/svg';
-  	mark-size: 250m;
-  	[@sd < 35k] {
-        label: 'Pylon';
-        font-family: "Open Sans";
-        font-size: 12;
-        font-fill: #000000;
-        halo-color: #ffffff;
-        halo-radius: 1;
-        label-anchor: 0.5 2.5;
-    }
+  mark: url('file://symbols/modified/pylon_wilson.svg');
+  mark-mime: 'image/svg';
+  mark-size: 250m;
+  [@sd < 35k] {
+    label: 'Pylon';
+    font-family: "Open Sans";
+    font-size: 12;
+    font-fill: #000000;
+    halo-color: #ffffff;
+    halo-radius: 1;
+    label-anchor: 0.5 2.5;
+  }
 
 }
 
 /* @title Vertical Obstruction */
 [F_CODE = 'AT042' and HGT >= 46 and OSM_T_POW = 'tower'] [@sd < 200k] {
-	mark: url('file://symbols/PT_Blue072_VO.svg');
-  	mark-mime: 'image/svg';
-  	mark-size: 600m;
-  	[@sd < 35k] {
-        label: 'Pylon';
-        font-family: "Open Sans";
-        font-size: 12;
-        font-fill: #000000;
-        halo-color: #ffffff;
-        halo-radius: 1;
-        label-anchor: 0.5 2.5;
-    }
+  mark: url('file://symbols/PT_Blue072_VO.svg');
+  mark-mime: 'image/svg';
+  mark-size: 600m;
+  [@sd < 35k] {
+    label: 'Pylon';
+    font-family: "Open Sans";
+    font-size: 12;
+    font-fill: #000000;
+    halo-color: #ffffff;
+    halo-radius: 1;
+    label-anchor: 0.5 2.5;
+  }
 }

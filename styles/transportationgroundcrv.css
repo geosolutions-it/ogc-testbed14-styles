@@ -1,78 +1,78 @@
 /* @title: Road Primary */
 [F_CODE = 'AP030' and RIN_ROI = '3'] {
-  	z-index: 0, 1;
-    [@sd < 25M][@sd > 2.5M] {
-      	stroke-width: 1.14, 0.9;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 2.5M][@sd > 500k] {
-      	stroke-width: 1.5, 1.14;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 500k][@sd > 100k] {
-      	stroke-width: 3, 2.25;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 100k][@sd > 5000] {
-      	stroke-width: 6.3, 4.655;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 5000][@sd > 100] {
-      	stroke-width: 12, 8;
-      	stroke: #000000, #cb171a;
-    };
+  z-index: 0, 1;
+  [@sd < 25M][@sd > 2.5M] {
+    stroke-width: 1.14, 0.9;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 2.5M][@sd > 500k] {
+    stroke-width: 1.5, 1.14;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 500k][@sd > 100k] {
+    stroke-width: 3, 2.25;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 100k][@sd > 5000] {
+    stroke-width: 6.3, 4.655;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 5000][@sd > 100] {
+    stroke-width: 12, 8;
+    stroke: #000000, #cb171a;
+  };
 }
 
 /* @title: Road Secondary */
 [F_CODE = 'AP030' and RIN_ROI = '4'] {
-  	z-index: 0, 1;
-    [@sd < 25M][@sd > 2.5M] {
-      	stroke-width: 1.14, 0.9;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 2.5M][@sd > 500k] {
-      	stroke-width: 1.5, 1.14;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 500k][@sd > 100k] {
-      	stroke-width: 3, 2.25;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 100k][@sd > 5000] {
-      	stroke-width: 6.3, 4.655;
-      	stroke: #000000, #cb171a;
-    };
-  	[@sd < 5000][@sd > 100] {
-      	stroke-width: 12, 8;
-      	stroke: #000000, #cb171a;
-    };
+  z-index: 0, 1;
+  [@sd < 25M][@sd > 2.5M] {
+    stroke-width: 1.14, 0.9;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 2.5M][@sd > 500k] {
+    stroke-width: 1.5, 1.14;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 500k][@sd > 100k] {
+    stroke-width: 3, 2.25;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 100k][@sd > 5000] {
+    stroke-width: 6.3, 4.655;
+    stroke: #000000, #cb171a;
+  };
+  [@sd < 5000][@sd > 100] {
+    stroke-width: 12, 8;
+    stroke: #000000, #cb171a;
+  };
 }
 
 /* @title: Street */
 [F_CODE = 'AP030' and RIN_ROI = '5'] {
-    z-index: 0, 1;
-    [@sd < 25M][@sd > 2.5M] {
-      	stroke-width: 0.855, 0.675;
-      	stroke: #000000, #ffffff;
-    };
-  	[@sd < 2.5M][@sd > 500k] {
-      	stroke-width: 1.125, 0.855;
-      	stroke: #000000, #ffffff;
-    };
-  	[@sd < 500k][@sd > 100k] {
-      	/* modified width */
-      	/*stroke-width: 2.250, 1.688;*/
-      	stroke-width: 1.9, 1.2;
-      	stroke: #000000, #ffffff;
-    };
-  	[@sd < 100k][@sd > 5000] {
-      	/* modified width */
-      	/*stroke-width: 4.725, 3.491;*/
-      	stroke-width: 3.725, 2.491;
-      	stroke: #000000, #ffffff;
-    };
-  	[@sd < 5000][@sd > 100] {
-      	stroke-width: 9, 6;
-      	stroke: #000000, #ffffff;
-    };
+  z-index: 0, 1;
+  [@sd < 25M][@sd > 2.5M] {
+    stroke-width: 0.855, 0.675;
+    stroke: #000000, #ffffff;
+  };
+  [@sd < 2.5M][@sd > 500k] {
+    stroke-width: 1.125, 0.855;
+    stroke: #000000, #ffffff;
+  };
+  [@sd < 500k][@sd > 100k] {
+    /* modified width */
+    /*stroke-width: 2.250, 1.688;*/
+    stroke-width: 1.9, 1.2;
+    stroke: #000000, #ffffff;
+  };
+  [@sd < 100k][@sd > 5000] {
+    /* modified width */
+    /*stroke-width: 4.725, 3.491;*/
+    stroke-width: 3.725, 2.491;
+    stroke: #000000, #ffffff;
+  };
+  [@sd < 5000][@sd > 100] {
+    stroke-width: 9, 6;
+    stroke: #000000, #ffffff;
+  };
 }

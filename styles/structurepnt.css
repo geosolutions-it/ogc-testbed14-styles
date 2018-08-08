@@ -1,15 +1,15 @@
 /* @title: Building, General */
 [F_CODE = 'AL013'] {
-    [@sd < 100k] {
-      mark: url('file://symbols/building.svg');
-      mark-mime: 'image/svg';
-      mark-size: 40m;
-    };
-    [@sd > 100k] [@sd < 200k]  {
-      mark: url('file://symbols/building.svg');
-      mark-mime: 'image/svg';
-      mark-size: 3m;
-    };
+  [@sd < 100k] {
+    mark: url('file://symbols/building.svg');
+    mark-mime: 'image/svg';
+    mark-size: 40m;
+  };
+  [@sd > 100k] [@sd < 200k]  {
+    mark: url('file://symbols/building.svg');
+    mark-mime: 'image/svg';
+    mark-size: 3m;
+  };
 }
 
 /* @title: Building, Mosque */
