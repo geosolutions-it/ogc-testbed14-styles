@@ -8,20 +8,6 @@
           <sld:Title>Bridge</sld:Title>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>F_CODE</ogc:PropertyName>
                 <ogc:Literal>AQ040</ogc:Literal>
@@ -36,46 +22,8 @@
           <sld:MaxScaleDenominator>10000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -95,53 +43,41 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -161,53 +97,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -227,53 +151,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -293,9 +205,35 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
         </sld:Rule>
@@ -303,20 +241,6 @@
           <sld:Title>Bridge</sld:Title>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>F_CODE</ogc:PropertyName>
                 <ogc:Literal>AQ040</ogc:Literal>
@@ -330,46 +254,8 @@
           <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -389,53 +275,41 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -455,53 +329,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -521,53 +383,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -587,9 +437,35 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
         </sld:Rule>
@@ -726,16 +602,6 @@
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
                 <ogc:PropertyIsNotEqualTo>
                   <ogc:PropertyName>F_CODE</ogc:PropertyName>
                   <ogc:Literal>AQ040</ogc:Literal>
@@ -780,16 +646,6 @@
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
                 <ogc:PropertyIsNotEqualTo>
                   <ogc:PropertyName>F_CODE</ogc:PropertyName>
                   <ogc:Literal>AQ040</ogc:Literal>
@@ -859,16 +715,6 @@
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
                 <ogc:PropertyIsNotEqualTo>
                   <ogc:PropertyName>F_CODE</ogc:PropertyName>
                   <ogc:Literal>AQ040</ogc:Literal>
@@ -906,16 +752,6 @@
           <ogc:Filter>
             <ogc:And>
               <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
                 <ogc:PropertyIsNotEqualTo>
                   <ogc:PropertyName>F_CODE</ogc:PropertyName>
                   <ogc:Literal>AQ040</ogc:Literal>
@@ -955,20 +791,6 @@
           <sld:Title>Bridge</sld:Title>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>F_CODE</ogc:PropertyName>
                 <ogc:Literal>AQ040</ogc:Literal>
@@ -988,46 +810,8 @@
           </sld:LineSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1047,53 +831,41 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1113,53 +885,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1179,53 +939,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1245,9 +993,35 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
         </sld:Rule>
@@ -1255,20 +1029,6 @@
           <sld:Title>Bridge</sld:Title>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>F_CODE</ogc:PropertyName>
                 <ogc:Literal>AQ040</ogc:Literal>
@@ -1288,46 +1048,8 @@
           </sld:LineSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1347,53 +1069,41 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1413,53 +1123,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1479,53 +1177,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1545,9 +1231,35 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
         </sld:Rule>
@@ -1595,90 +1307,6 @@
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>
-        <sld:Rule>
-          <sld:Title>Bridge</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                  <ogc:Literal>AQ040</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>TRS</ogc:PropertyName>
-                  <ogc:Literal>13</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-              </ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AQ040</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>TRS</ogc:PropertyName>
-                <ogc:Literal>13</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>10000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">14</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Title>Bridge</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                  <ogc:Literal>AQ040</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>TRS</ogc:PropertyName>
-                  <ogc:Literal>13</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-              </ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AQ040</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>TRS</ogc:PropertyName>
-                <ogc:Literal>13</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke-width">32</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
         <sld:VendorOption name="ruleEvaluation">first</sld:VendorOption>
       </sld:FeatureTypeStyle>
       <sld:FeatureTypeStyle>
@@ -1686,20 +1314,6 @@
           <sld:Title>Bridge</sld:Title>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>F_CODE</ogc:PropertyName>
                 <ogc:Literal>AQ040</ogc:Literal>
@@ -1720,46 +1334,8 @@
           </sld:LineSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1779,53 +1355,41 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1845,53 +1409,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1911,53 +1463,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-450</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -1977,9 +1517,35 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-7</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
         </sld:Rule>
@@ -1987,20 +1553,6 @@
           <sld:Title>Bridge</sld:Title>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>F_CODE</ogc:PropertyName>
                 <ogc:Literal>AQ040</ogc:Literal>
@@ -2021,46 +1573,8 @@
           </sld:LineSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -2080,53 +1594,41 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -2146,53 +1648,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>0.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>0</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="startPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="startAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -2212,53 +1702,41 @@
                 </ogc:Add>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="startAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
           <sld:PointSymbolizer>
             <sld:Geometry>
-              <ogc:Function name="offset">
-                <ogc:Function name="endPoint">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
-                </ogc:Function>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="sin">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
-                <ogc:Mul>
-                  <ogc:Div>
-                    <ogc:Function name="env">
-                      <ogc:Literal>wms_scale_denominator</ogc:Literal>
-                    </ogc:Function>
-                    <ogc:Literal>-225</ogc:Literal>
-                  </ogc:Div>
-                  <ogc:Function name="cos">
-                    <ogc:Function name="toRadians">
-                      <ogc:Mul>
-                        <ogc:Function name="endAngle">
-                          <ogc:PropertyName>the_geom</ogc:PropertyName>
-                        </ogc:Function>
-                        <ogc:Literal>1</ogc:Literal>
-                      </ogc:Mul>
-                    </ogc:Function>
-                  </ogc:Function>
-                </ogc:Mul>
+              <ogc:Function name="endPoint">
+                <ogc:PropertyName>the_geom</ogc:PropertyName>
               </ogc:Function>
             </sld:Geometry>
             <sld:Graphic>
@@ -2278,9 +1756,35 @@
                 </ogc:Sub>
               </sld:Rotation>
               <sld:AnchorPoint>
-                <sld:AnchorPointX>0.0</sld:AnchorPointX>
-                <sld:AnchorPointY>1.0</sld:AnchorPointY>
+                <sld:AnchorPointX>0</sld:AnchorPointX>
+                <sld:AnchorPointY>1</sld:AnchorPointY>
               </sld:AnchorPoint>
+              <sld:Displacement>
+                <sld:DisplacementX>
+                  <ogc:Mul>
+                    <ogc:Literal>-16</ogc:Literal>
+                    <ogc:Function name="sin">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementX>
+                <sld:DisplacementY>
+                  <ogc:Mul>
+                    <ogc:Literal>16</ogc:Literal>
+                    <ogc:Function name="cos">
+                      <ogc:Function name="toRadians">
+                        <ogc:Function name="endAngle">
+                          <ogc:PropertyName>the_geom</ogc:PropertyName>
+                        </ogc:Function>
+                      </ogc:Function>
+                    </ogc:Function>
+                  </ogc:Mul>
+                </sld:DisplacementY>
+              </sld:Displacement>
             </sld:Graphic>
           </sld:PointSymbolizer>
         </sld:Rule>
@@ -2327,92 +1831,6 @@
             <sld:Stroke>
               <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
               <sld:CssParameter name="stroke-width">12</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Title>Bridge</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                  <ogc:Literal>AQ040</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>TRS</ogc:PropertyName>
-                  <ogc:Literal>13</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-              </ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AQ040</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>TRS</ogc:PropertyName>
-                <ogc:Literal>13</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>10000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">12</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Title>Bridge</sld:Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="startAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNull>
-                  <ogc:Function name="endAngle">
-                    <ogc:PropertyName>the_geom</ogc:PropertyName>
-                  </ogc:Function>
-                </ogc:PropertyIsNull>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                  <ogc:Literal>AQ040</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyIsNotEqualTo>
-                  <ogc:PropertyName>TRS</ogc:PropertyName>
-                  <ogc:Literal>13</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>
-              </ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>F_CODE</ogc:PropertyName>
-                <ogc:Literal>AQ040</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>TRS</ogc:PropertyName>
-                <ogc:Literal>13</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-          <sld:MinScaleDenominator>100.0</sld:MinScaleDenominator>
-          <sld:MaxScaleDenominator>5000.0</sld:MaxScaleDenominator>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">26</sld:CssParameter>
             </sld:Stroke>
           </sld:LineSymbolizer>
         </sld:Rule>

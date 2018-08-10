@@ -2,41 +2,15 @@
 
 [F_CODE = 'AQ040' and TRS = '13'] {
 
-  [@sd < 10k][startAngle(the_geom) IS NOT NULL AND endAngle(the_geom) IS NOT NULL] {
-    [@sd >= 5k] {
-      /* '* 1' in toRadians is workaround to avoid null value */
-      mark-geometry: [offset(startPoint(the_geom),
-        @sd / 450 * sin(toRadians(startAngle(the_geom) * 1)),
-        @sd / 450 * cos(toRadians(startAngle(the_geom) * 1)))],
-        [offset(endPoint(the_geom),
-          @sd / 450 * sin(toRadians(endAngle(the_geom) * 1)), 
-          @sd / 450 * cos(toRadians(endAngle(the_geom) * 1)))],
-        [offset(startPoint(the_geom),
-          @sd / -450 * sin(toRadians(startAngle(the_geom) * 1)), 
-          @sd / -450 * cos(toRadians(startAngle(the_geom) * 1)))],
-        [offset(endPoint(the_geom),
-          @sd / -450 * sin(toRadians(endAngle(the_geom) * 1)), 
-          @sd / -450 * cos(toRadians(endAngle(the_geom) * 1)))];
-    };
-    [@sd < 5k] {
-      /* '* 1' in toRadians is workaround to avoid null value */
-      mark-geometry: [offset(startPoint(the_geom),
-        @sd / 225 * sin(toRadians(startAngle(the_geom) * 1)),
-        @sd / 225 * cos(toRadians(startAngle(the_geom) * 1)))],
-        [offset(endPoint(the_geom),
-          @sd / 225 * sin(toRadians(endAngle(the_geom) * 1)), 
-          @sd / 225 * cos(toRadians(endAngle(the_geom) * 1)))],
-        [offset(startPoint(the_geom),
-          @sd / -225 * sin(toRadians(startAngle(the_geom) * 1)), 
-          @sd / -225 * cos(toRadians(startAngle(the_geom) * 1)))],
-        [offset(endPoint(the_geom),
-          @sd / -225 * sin(toRadians(endAngle(the_geom) * 1)), 
-          @sd / -225 * cos(toRadians(endAngle(the_geom) * 1)))];
-    };
-
+  [@sd < 10k] {
+    mark-geometry: [startPoint(the_geom)], [endPoint(the_geom)], [startPoint(the_geom)], [endPoint(the_geom)];
     mark: symbol('shape://vertline');
     mark-rotation: [startAngle(the_geom) - 45], [endAngle(the_geom) + 45], [startAngle(the_geom) + 45], [endAngle(the_geom) - 45];
     mark-anchor: 0 0, 0 0, 0 1, 0 1;
+    mark-offset: [16 * sin(toRadians(startAngle(the_geom)))] [-16 * cos(toRadians(startAngle(the_geom)))],
+    [16 * sin(toRadians(endAngle(the_geom)))] [-16 * cos(toRadians(endAngle(the_geom)))],
+    [-16 * sin(toRadians(startAngle(the_geom)))] [16 * cos(toRadians(startAngle(the_geom)))],
+    [-16 * sin(toRadians(endAngle(the_geom)))] [16 * cos(toRadians(endAngle(the_geom)))];
 
     :mark {
       stroke: #000000;
@@ -48,6 +22,10 @@
         stroke-width: 0.5;
         size: 5;
       };
+      mark-offset: [7 * sin(toRadians(startAngle(the_geom)))] [-7 * cos(toRadians(startAngle(the_geom)))],
+      [7 * sin(toRadians(endAngle(the_geom)))] [-7 * cos(toRadians(endAngle(the_geom)))],
+      [-7 * sin(toRadians(startAngle(the_geom)))] [7 * cos(toRadians(startAngle(the_geom)))],
+      [-7 * sin(toRadians(endAngle(the_geom)))] [7 * cos(toRadians(endAngle(the_geom)))];
     };
   };
   [@sd < 100k][@sd >= 30k] {

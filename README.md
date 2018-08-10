@@ -5,9 +5,21 @@ GeoServer data directory with styles for ogc-testbed14.
 This data directory has been generated with
 
 ```
-GeoServer 2.14-SNAPSHOT
-Build Date 05-Jun-2018 08:00
+GeoServer Version
+2.14-SNAPSHOT
+Git Revision
+f3f6a53cbe29fa9e87ec804029762ae98776a889
+Build Date
+10-Aug-2018 08:06
+GeoTools Version
+20-SNAPSHOT (rev e53f4d9472230784fabc55fa5b0d30fa08d91a87)
+GeoWebCache Version
+1.14-SNAPSHOT (rev 0fe3d74c9768b45e17b5cbe8ca9d22ce73c7aec8/0fe3d74c9768b45e17b5cbe8ca9d22ce73c7aec8)
 ```
+
+extensions
+- CSS
+- WPS
 
 Credentials are standard (no changes from standard build)
 
